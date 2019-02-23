@@ -1,7 +1,5 @@
 # Neighborhood-Map-React
-A single-page web application, built using the React framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the FourSquare APIs.
-
-This application follow this [Udacity Project Rubric](https://review.udacity.com/#!/rubrics/1351/view)
+This is a single-page web application, built using the React framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected. The additional information about a landmark is presented from the FourSquare APIs.
 
 ## How to run the project online
 Open the online demo [here](https://aditisobti.github.io/Neighborhood-Map-React/)
@@ -20,7 +18,7 @@ After Node is installed in your system, follow the below steps.
 
 1. Navigate to the directory where you want to store the app.
 2. Clone the repo `git clone https://github.com/aditisobti/Neighborhood-Map-React.git`
-3. Now install all modules listed as dependencies in `package.json` by running the command `npm install`
+3. Now install all modules listed as dependencies in `package.json` by running the command `npm install`. This will take few minutes.
 4. Launch the app with this command `npm start`
 
 A new browser window open automatically displaying the app.  If it doesn't, navigate to [http://localhost:3000/](http://localhost:3000/) in your browser
@@ -32,3 +30,7 @@ A new browser window open automatically displaying the app.  If it doesn't, navi
 1. Build the production ready optimised code. `npm run build`
 2. Deploy it to `gh-pages` branch by `npm run deploy`
 3. Check the online demo [here](https://aditisobti.github.io/Neighborhood-Map-React/)
+
+## Instructions for Interacting
+- Click on a venue to display information. The information is from www.foursquare.com
+- Alternatively, you can tab to a venue or use the search input field to filter the venues and click the one you would like to see information.
