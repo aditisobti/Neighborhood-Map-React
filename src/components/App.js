@@ -118,9 +118,9 @@ class App extends Component {
                 response.json().then(function (data) {
                     var locationData = data.response.venues[0];
                     var category = '<div id="content"><h3 id="secondHeading" class="secondHeading">Category: ' + locationData.categories[0].shortName + '</h3><br>';
-                    var verified = '<div id="bodyContent"><b>Verified Location: </b>' + (locationData.verified ? 'Yes' : 'No') + '<br>';                
+                    var verified = '<div id="bodyContent"><b>Verified Location: </b>' + (locationData.verified ? 'Yes' : 'No') + '<br>';
                     var postalCode = '<b>Postal code: </b>' + locationData.location.postalCode + '<br>'
-                    var readMore = '<a href="https://foursquare.com/v/' + locationData.id + '" target="_blank">Read More on Foursquare site</a></div></div>'
+                    var readMore = '<a style="color: green;" href="https://foursquare.com/v/' + locationData.id + '" target="_blank">Read more...</a></div></div>'
                     that.state.currentInfoWindow.setContent(category + verified + postalCode + readMore);
                 });
 
