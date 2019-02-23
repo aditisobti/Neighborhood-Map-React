@@ -41,7 +41,13 @@ export default class Constants {
             'type': "Restaurant",
             'latitude': 47.7970951,
             'longitude': -122.2120421
-        }        
+        },
+        {
+            'name': "Bonefish Grill",
+            'type': "Restaurant",
+            'latitude': 47.793335,
+            'longitude': -122.2160348
+        }            
     ];
 
     static googleMapKey = "AIzaSyDYXiSBOR4UXM_JXF_GmEjzO0nbwf-wXDg";
