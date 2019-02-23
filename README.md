@@ -4,13 +4,6 @@ This is a single-page web application, built using the React framework, that dis
 ## How to run the project online
 Open the online demo [here](https://aditisobti.github.io/Neighborhood-Map-React/)
 
-## Features
-
-1. Type into the filter/search box to filter the shown locations on the map.
-2. Click on the button below the filter/search box to collapse or expand the suggestions list.
-3. Click anywhere on the map to close the information window that opens.
-4. Click on any marker to see the location details fetched from the [FourSquare APIs](https://developer.foursquare.com/).
-
 ## How to run the project in Development Mode
 The project uses [Node.js >= 6.x](https://nodejs.org/en/) and the [Create-React-App starter code](https://github.com/facebookincubator/create-react-app).
 
@@ -30,6 +23,13 @@ A new browser window open automatically displaying the app.  If it doesn't, navi
 1. Build the production ready optimised code. `npm run build`
 2. Deploy it to `gh-pages` branch by `npm run deploy`
 3. Check the online demo [here](https://aditisobti.github.io/Neighborhood-Map-React/)
+
+## Features
+
+1. Type into the filter/search box to filter the shown locations on the map.
+2. Click on the button below the filter/search box to collapse or expand the suggestions list.
+3. Click anywhere on the map to close the information window that opens.
+4. Click on any marker to see the location details fetched from the [FourSquare APIs](https://developer.foursquare.com/).
 
 ## Instructions for Interacting
 - Click on a venue to display information. The information is from www.foursquare.com

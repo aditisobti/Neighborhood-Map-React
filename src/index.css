@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .filter {
@@ -23,6 +25,11 @@ ul {
     margin: 0;
     max-height: 200px;
     overflow: auto;
+}
+
+li {
+    height: 14px;
+    font-size: 13px;
 }
 
 .container {
