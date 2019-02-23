@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 /**
  * NearByLocations component.
  */
-class NearByLocations extends Component {  
+class NearByLocations extends Component {
     constructor(props) {
         super(props);
         // Initial state.
@@ -73,7 +73,8 @@ class NearByLocations extends Component {
                 <ul>
                     {this.state.isSuggestionDisplayed && allLocationsList}
                 </ul>
-                <button className="button" onClick={this.toggleSuggestions}>Show/Hide Suggestions</button>
+                <button className="button" onClick={this.toggleSuggestions}>
+                    {this.state.isSuggestionDisplayed === true ? "Hide Suggestions" : "Show Suggestions"}</button>
             </div>
         );
     }

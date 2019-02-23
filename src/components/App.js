@@ -114,14 +114,14 @@ class App extends Component {
         var that = this;
         FourSquareAPI.getFourSquareDetails(marker.getPosition().lat(), marker.getPosition().lng())
             .then(response => {
-                // Evaluate the the response
+                // Evaluate the the response and create the popup content.
                 response.json().then(function (data) {
                     var locationData = data.response.venues[0];
-                    var verified = '<b>Verified Location: </b>' + (locationData.verified ? 'Yes' : 'No') + '<br>';
-                    var category = '<b>Category: </b>' + locationData.categories[0].shortName + '<br>';
+                    var category = '<div id="content"><h3 id="secondHeading" class="secondHeading">Category: ' + locationData.categories[0].shortName + '</h3><br>';
+                    var verified = '<div id="bodyContent"><b>Verified Location: </b>' + (locationData.verified ? 'Yes' : 'No') + '<br>';                
                     var postalCode = '<b>Postal code: </b>' + locationData.location.postalCode + '<br>'
-                    var readMore = '<a href="https://foursquare.com/v/' + locationData.id + '" target="_blank">Read More on Foursquare site</a>'
-                    that.state.currentInfoWindow.setContent(category + postalCode + verified + readMore);
+                    var readMore = '<a href="https://foursquare.com/v/' + locationData.id + '" target="_blank">Read More on Foursquare site</a></div></div>'
+                    that.state.currentInfoWindow.setContent(category + verified + postalCode + readMore);
                 });
 
             })
